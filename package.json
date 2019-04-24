@@ -4,6 +4,7 @@
   "scripts": {
     "build": "rollup -c"
   },
+  "main": "index.js",
   "devDependencies": {
     "rollup": "^1.10.1",
     "rollup-plugin-json": "^4.0.0"
