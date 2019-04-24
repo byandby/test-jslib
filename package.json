@@ -1,5 +1,5 @@
 {
-  "name": "rollup-tutorial",
+  "name": "test-jslib",
   "version": "0.0.1",
   "scripts": {
     "build": "rollup -c"
