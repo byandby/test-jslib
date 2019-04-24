@@ -1,8 +1,9 @@
 {
   "name": "test-jslib",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
   },
   "main": "index.js",
   "devDependencies": {
