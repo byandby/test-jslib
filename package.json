@@ -5,10 +5,32 @@
     "build": "rollup -c",
     "dev": "rollup -c -w"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
   "devDependencies": {
-    "rollup": "^1.10.1",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "lint-staged": "^9.0.2",
+    "prettier": "^1.17.0",
+    "rollup": "^1.17.0",
+    "rollup-plugin-commonjs": "^10.0.1",
     "rollup-plugin-json": "^4.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "peerDependencies": {
+    "connected-react-router": "^6.5.0",
+    "history": "^4.9.0",
+    "prop-types": "^15.7.2",
+    "ramda": "^0.26.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^5.10.0",
+    "redux-saga": "^1.0.5",
+    "seamless-immutable": "^7.1.4"
+  }
 }
