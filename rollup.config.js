@@ -14,27 +14,27 @@ export default {
     {
       file: pkg.main,
       format: 'cjs',
-      sourcemap: true
+      sourcemap: true,
     },
     {
       file: pkg.module,
       format: 'es',
-      sourcemap: true
-    }
+      sourcemap: true,
+    },
   ],
-  external: ['ramda'],
+  external: ['history', 'ramda', 'redux-logger', 'redux-persist', 'seamless-immutable'],
   plugins: [
     external(),
     postcss({
-      modules: true
+      modules: true,
     }),
     url(),
     svgr(),
     babel({
       exclude: 'node_modules/**',
-      plugins: [ 'external-helpers' ]
+      plugins: ['external-helpers'],
     }),
     resolve(),
-    commonjs()
-  ]
+    commonjs(),
+  ],
 }
