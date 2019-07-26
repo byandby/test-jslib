@@ -1,37 +1,20 @@
 {
-  "name": "fp-sample",
-  "version": "0.1.0",
+  "name": "test-rl-example",
+  "homepage": "https://.github.io/test-rl",
+  "version": "0.0.0",
+  "license": "MIT",
   "private": true,
   "dependencies": {
-    "connected-react-router": "^6.4.0",
-    "history": "^4.9.0",
-    "prop-types": "^15.7.2",
-    "ramda": "^0.26.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.0.3",
-    "react-router": "^5.0.0",
-    "react-scripts": "2.1.8",
-    "redux": "^4.0.1",
-    "redux-logger": "^3.0.6",
-    "redux-persist": "^5.10.0",
-    "redux-saga": "^1.0.2",
-    "seamless-immutable": "^7.1.4",
-    "test-jslib": "file:.."
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "^1.1.4",
+    "test-rl": "file:.."
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  }
 }

@@ -1,13 +1,25 @@
-import foo from './foo.js'
-import { version } from '../package.json'
-import {
-  UPDATE_DATA_STATUS,
-  DATA_STATUS_FETCHING,
-  DATA_STATUS_SUCCESS,
-  DATA_STATUS_FAILED,
-} from './dataHelper'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import * as R from 'ramda'
 
-export default function() {
-  console.log(foo + version)
-  console.log('in watching mode again')
+import styles from './styles.css'
+
+export const testR = R.join('||')
+
+export default class ExampleComponent extends Component {
+  static propTypes = {
+    text: PropTypes.string
+  }
+
+  render() {
+    const {
+      text
+    } = this.props
+
+    return (
+      <div className={styles.test}>
+        Example Component: {text}
+      </div>
+    )
+  }
 }

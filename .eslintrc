@@ -1,37 +1,23 @@
 {
-  "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
   "parser": "babel-eslint",
+  "extends": [
+    "standard",
+    "standard-react"
+  ],
+  "env": {
+    "es6": true
+  },
+  "plugins": [
+    "react"
+  ],
   "parserOptions": {
     "sourceType": "module"
   },
   "rules": {
-    "prettier/prettier": ["error"],
-    "import/order": [
-      "error",
-      {
-        "groups": ["builtin", "external", "parent", "sibling", "index"],
-        "newlines-between": "always"
-      }
-    ],
-    "max-lines": ["error", { "max": 300, "skipBlankLines": true, "skipComments": true }],
-    "react/prop-types": [
-      2,
-      {
-        "ignore": ["className", "style", "children", "location", "match", "history", "theme"]
-      }
-    ],
-    "react/jsx-wrap-multilines": ["error", "never"]
-  },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": ["src"]
-      }
-    }
-  },
-  "env": {
-    "jest": true,
-    "browser": true
+    // don't force es6 functions to include space before paren
+    "space-before-function-paren": 0,
+
+    // allow specifying true explicitly for boolean props
+    "react/jsx-boolean-value": 0
   }
 }

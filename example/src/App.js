@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 
-class App extends Component {
-  render() {
+import ExampleComponent, {testR} from 'test-rl'
+
+console.log(testR([1,2,3,4,5,]))
+
+export default class App extends Component {
+  render () {
     return (
       <div>
-        <header>Example</header>
+        <ExampleComponent text='Modern React component module' />
       </div>
     )
   }
 }
-
-export default App
