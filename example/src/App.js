@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
-import { CLUSTER_LIST } from './redux/modules/cluster'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 import helper from 'test-rl'
+
+import { CLUSTER_LIST } from './redux/modules/cluster'
 
 const List = ({ data, fetchClusters }) => {
   useEffect(() => {
