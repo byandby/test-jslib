@@ -105,5 +105,3 @@ export const createDataSelector = type => (state, param) => {
   if (typeof selector === 'string') return R.path([namespace, ...selector.split('.')], state)
   return null
 }
-
-export const pathConvertor = R.curry((path, obj) => R.path((path || '').split('.'), obj))

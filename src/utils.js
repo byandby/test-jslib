@@ -8,8 +8,8 @@ export const toMap = R.curry((getKey, getValue, array) =>
       return acc
     },
     {},
-    array
-  )
+    array,
+  ),
 )
 
 export const setIn = (obj, path, value) =>
@@ -78,16 +78,18 @@ export const objToQuery = R.curry(
     Object.keys(obj)
       .filter(key => !R.isNil(obj[key]))
       .map(key => `${transfer(key)}=${obj[key]}`)
-      .join('&')
+      .join('&'),
   // )
 )
 
 export const condition = R.curry((opt, value) => {
   const options = opt.map(item => [
     typeof item[0] === 'function' ? item[0] : R.equals(item[0]),
-    typeof item[1] === 'function' ? item[1] : R.always(item[1])
+    typeof item[1] === 'function' ? item[1] : R.always(item[1]),
   ])
   return R.cond(options)(value)
 })
 
 export const check = R.curry((v, obj) => (R.isNil(obj) ? v : obj))
+
+export const pathConvertor = R.curry((path, obj) => R.path((path || '').split('.'), obj))
