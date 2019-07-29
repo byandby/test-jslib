@@ -98,6 +98,8 @@ export const buildReducerAndSagas = ({ namespace, initialState, configs, localRe
 export const createStatusSelector = type => state => R.path(['dataStatus', type], state)
 
 export const createDataSelector = type => (state, param) => {
+  console.log(allConfigMap)
+  conset test = allConfigMap
   const { namespace, config } = allConfigMap[type]
   if (!namespace) return null
   const { selector, get } = config
