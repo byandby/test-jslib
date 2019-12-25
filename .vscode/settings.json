@@ -3,5 +3,8 @@
   "eslint.autoFixOnSave": true,
   "editor.formatOnSave": true,
   "javascript.format.enable": true,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
